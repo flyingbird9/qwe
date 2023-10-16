@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+</head>
+<body>
+    <div style="padding-top:50px; margin: auto; width:600px">
+        <!-- 登录地址一定是/login， 请求方式一定是post -->
+        <form method="post" action="/def">
+            <label style="width: 180px; text-align: right; padding-right: 5px">用户名：</label>
+            <!-- Security框架处理请求用户名的请求参数名，默认是username。 -->
+            <input type="text" name="uname"><br>
+            <label style="width: 180px; text-align: right; padding-right: 5px">密码：</label>
+            <!-- Security框架处理请求密码的参数名，默认是password -->
+            <input type="text" name="pswd"><br>
+            <div style="text-align: center">
+            <input type="submit" value="登录">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
